@@ -71,23 +71,13 @@ bash benchmark.sh
 
 Then, following [EfficientFormer](https://github.com/snap-research/EfficientFormer) and [coreml-performance](https://github.com/vladimir-chernykh/coreml-performance), use `coreml/coreml-performance` to evaluate the model on xcode.
 
-Note that our well-trained checkpoints are provided in Google Drive. Download the checkpoints and place the folder `./ckpt` under `./CARETrans`.
+Note that our well-trained checkpoints are provided in [Google Drive](https://drive.google.com/drive/folders/1UGRHQKjBGY8EjUtsHLsy9VBXp7rfUqkf?usp=sharing). Download the checkpoints and place the folder `./ckpt` under `./CARETrans`.
 
 The results will be around the following.
 
 |        Method        |   Type   | GMACs | Params (M) | iPhone13 (ms) | Intel i9 (ms) | RTX 4090 (ms) | Top-1 Acc (%) |
 | :-------------------: | :------: | :---: | :--------: | :-----------: | :-----------: | :-----------: | :------------: |
 |    MobileNetV2-1.0    |   CONV   |  0.3  |    3.5    |      1.0      |      1.1      |      9.3      |      71.8      |
-|     MobileOne-S0     |   CONV   |  0.3  |    2.1    |      1.1      |      0.7      |      9.9      |      71.4      |
-|     MobileViGv2-T     | GNN+CONV |  0.6  |    5.6    |      1.1      |      3.8      |     10.3     |      77.7      |
-|      FastViT-T8      | SA+CONV |  0.7  |    3.6    |      1.3      |     11.1     |     17.2     |      76.7      |
-|        EMO-5M        | SA+CONV |  0.9  |    5.1    |      2.7      |     17.6     |     18.3     |      78.4      |
-|     MobileViGv2-S     | GNN+CONV |  0.9  |    7.7    |      1.3      |      5.6      |     15.1     |      79.8      |
-|     MobileOne-S2     |   CONV   |  1.3  |    7.8    |      1.4      |      2.2      |     26.6     |      77.4      |
-|      SLAB-DeiT-T      |    LA    |  1.3  |    6.2    |      1.6      |      6.2      |     10.4     |      73.6      |
-|      FastViT-T12      | SA+CONV |  1.4  |    6.8    |      2.1      |     16.1     |     26.1     |      80.3      |
-|      MobileViG-M      | GNN+CONV |  1.5  |    14.0    |      1.6      |      6.7      |     19.4     |      80.6      |
-|     MobileOne-S4     |   CONV   |  3.0  |    14.8    |      2.4      |      7.2      |     50.8     |      79.4      |
 |        MLLA-T        | LA+CONV |  4.2  |    25.0    |      5.1      |     21.3     |     51.5     |      83.5      |
 | **Our CARE-S0** | LA+CONV |  0.7  |    7.3    |      1.1      |      4.3      |      9.8      | **78.4** |
 | **Our CARE-S1** | LA+CONV |  1.0  |    9.6    |      1.4      |      6.6      |     14.2     | **80.1** |
