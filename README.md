@@ -77,7 +77,6 @@ The results will be around the following.
 
 |        Method        |   Type   | GMACs | Params (M) | iPhone13 (ms) | Intel i9 (ms) | RTX 4090 (ms) | Top-1 Acc (%) |
 | :-------------------: | :------: | :---: | :--------: | :-----------: | :-----------: | :-----------: | :------------: |
-|    MobileNetV2-1.0    |   CONV   |  0.3  |    3.5    |      1.0      |      1.1      |      9.3      |      71.8      |
 |        MLLA-T        | LA+CONV |  4.2  |    25.0    |      5.1      |     21.3     |     51.5     |      83.5      |
 | **Our CARE-S0** | LA+CONV |  0.7  |    7.3    |      1.1      |      4.3      |      9.8      | **78.4** |
 | **Our CARE-S1** | LA+CONV |  1.0  |    9.6    |      1.4      |      6.6      |     14.2     | **80.1** |
