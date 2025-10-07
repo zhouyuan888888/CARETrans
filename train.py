@@ -554,9 +554,6 @@ def main():
 
     if args.eval:
         state = torch.load(args.eval_ckpt, map_location='cpu')
-        #state = state['state_dict']
-        #state = {k.replace('mlp', 'inter_layer'): v for k, v in state.items()}
-        #torch.save(state, './ckpt/CARETrans_S2.pth.tar')
         model.load_state_dict(state, strict=True)
         results = validate(model, loader_eval, validate_loss_fn, args, amp_autocast=amp_autocast)
         top1 = results['top1']
